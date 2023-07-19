@@ -3,7 +3,7 @@ module go-svelte-spa
 go 1.20
 
 require (
-	github.com/julienschmidt/httprouter v1.3.0
+	github.com/gorilla/mux v1.8.0
 	github.com/rs/zerolog v1.29.1
 )
 
