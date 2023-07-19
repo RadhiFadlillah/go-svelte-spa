@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	// The params prop contains values matched from the URL
-	export let params = {}
+	export let params = { first: '', last: undefined }
 </script>
 
 <h2>Hi there!</h2>

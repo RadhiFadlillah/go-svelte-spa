@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	// Import the router component
 	import Router from 'svelte-spa-router'
 

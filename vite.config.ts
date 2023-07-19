@@ -1,26 +1,26 @@
 import { defineConfig } from 'vite'
+import type { BuildOptions } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ _, mode }) => {
-	let buildConfig
+export default defineConfig(({ mode }) => {
+	let buildOptions: BuildOptions
 	if (mode === 'production') {
-		buildConfig = {
+		buildOptions = {
 			emptyOutDir: true,
-			outDir: '../build/public'
+			outDir: 'build/public'
 		}
 	} else {
-		buildConfig = {
+		buildOptions = {
 			watch: {},
 			minify: false,
 			emptyOutDir: true,
-			outDir: '../build/public-dev'
+			outDir: 'build/public-dev'
 		}
 	}
 
 	return {
-		root: 'frontend/',
 		plugins: [svelte()],
-		build: buildConfig
+		build: buildOptions
 	}
 })

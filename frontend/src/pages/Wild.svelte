@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	// The params prop contains values matched from the URL
-	export let params = {}
+	export let params = { wild: undefined }
 </script>
 
 <h2>Wildcard</h2>

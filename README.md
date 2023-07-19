@@ -1,6 +1,6 @@
-# Go + Svelte SPA
+# Go + Svelte + TS SPA
 
-This is a template for developing SPA using Go and Svelte.
+This is a template for developing SPA using Go, Svelte and TypeScript.
 
 ## Recommended IDE Setup
 
@@ -64,11 +64,13 @@ go-svelte-spa
 ├── app.go ──────────────┘
 ├── go.mod ──────────────┬─ Go module
 ├── go.sum ──────────────┘
-├── jsconfig.json ───────── config for JS language server
+├── index.html ──────────── the entrance for our SPA
 ├── package-lock.json ───┬─ config for NPM
 ├── package.json ────────┘
 ├── README.md ───────────── this readme file
 ├── svelte.config.js ────── config for `svelte`
+├── tsconfig.json ───────┬─ config for TS language server
+├── tsconfig.node.json ──┘
 └── vite.config.js ──────── config for `vite`
 ```
 
